@@ -61,9 +61,11 @@ const todos = (state = initialState, action) => {
       return {
         ...state,
         todos: [...state.todos, action.payload],
+        // 2번 문제 해결
       };
 
     case DELETE_TODO:
+      // 3번 문제 해결
       return {
         ...state,
         todos: state.todos.filter((todo) => todo.id !== action.payload),

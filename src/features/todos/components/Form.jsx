@@ -8,6 +8,7 @@ const Form = () => {
   const id = nextId();
 
   const dispatch = useDispatch();
+  // 1번 문제 해결
   
   const [todo, setTodo] = useState({
     id: 0,
@@ -27,6 +28,7 @@ const Form = () => {
     if (todo.title.trim() === "" || todo.body.trim() === "") return;
     
     dispatch(addTodo({...todo, id}));
+    // 1번 문제 해결
     setTodo({
       id: 0,
       title: "",

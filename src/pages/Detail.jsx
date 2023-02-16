@@ -14,7 +14,7 @@ const Detail = () => {
   useEffect(() => {
     dispatch(getTodoByID(id));
   }, [dispatch, id]);
-  
+  // 4,5 문제 해결
 
   return (
     <StContainer>

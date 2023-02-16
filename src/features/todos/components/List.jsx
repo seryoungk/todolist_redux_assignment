@@ -75,6 +75,7 @@ const List = () => {
                   <StButton
                     borderColor="green"
                     onClick={() => onToggleStatusTodo(todo.id)}
+                    // 6번 문제 해결
                   >
                     {todo.isDone ? "취소!" : "완료!"}
                   </StButton>
